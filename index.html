@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content=""/>
+  <meta name="keywords" content=""/>
+  <meta name="author" content="Fedorov Anton">
+
+  <title>Funbox</title>
+
+  <link rel="stylesheet" type="text/css" href="dist/css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="dist/css/style.css">
+
+  <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <div class="filter">
+
+      <header class="header">
+        <p class="header__text">Ты сегодня покормил кота?</p>
+      </header>
+
+      <div class="menu">
+
+        <div class="menu__item" id="duck-media"> <!-- DUCK -->
+          <a class="menu__image duck" id="js-duck__image" href="#">
+            <div class="menu__description">
+                <p class="menu__description--title-first">Сказочное заморское яство</p>
+                <p class="menu__description--title-second">Нямушка</p>
+                <p class="menu__description--taste">с фуа-гра</p>
+                <p class="menu__description--bonus"><span>10 порций</span> <span>мышь в подарок</span></p>
+            </div>
+            <div class="menu__weight" id="js-duck__weight">
+              <p class="menu__weight--value">0,5</p>
+              <p class="menu__weight--kilo">кг</p>  
+            </div>
+          </a>
+          <div class="menu__caption">
+            <p class="menu__caption--text" id="js-duck__caption">Чего сидишь? Порадуй котэ,</p>
+            <a class="menu__caption--buy" id="js-duck__buy" href="#">купи.</a>
+          </div>
+        </div>
+
+        <div class="menu__item"> <!-- FISH -->
+          <a class="menu__image fish" id="js-fish__image" href="#">
+            <div class="menu__description">
+              <p class="menu__description--title-first">Сказочное заморское яство</p>
+              <p class="menu__description--title-second">Нямушка</p>
+              <p class="menu__description--taste">с рыбой</p>
+              <p class="menu__description--bonus"><span>40 порций</span> <span>2 мыши в подарок</span></p>
+            </div>
+            <div class="menu__weight" id="js-fish__weight">
+              <p class="menu__weight--value">2</p>
+              <p class="menu__weight--kilo">кг</p>  
+            </div>
+          </a>
+          <div class="menu__caption">
+            <p class="menu__caption--text" id="js-fish__caption">Чего сидишь? Порадуй котэ,</p>
+            <a class="menu__caption--buy" id="js-fish__buy" href="#">купи.</a>
+          </div>
+        </div>
+
+        <div class="menu__item"> <!-- CHICKEN -->
+          <a class="menu__image chicken" id="js-chicken__image" href="#">
+            <div class="menu__description">
+              <p class="menu__description--title-first">Сказочное заморское яство</p>
+              <p class="menu__description--title-second">Нямушка</p>
+              <p class="menu__description--taste">с курой</p>
+              <p class="menu__description--bonus"><span>100 порций</span> <span>5 мышей в подарок</span> <span>заказчик доволен</span></p>
+            </div>
+            <div class="menu__weight" id="js-chicken__weight">
+              <p class="menu__weight--value">5</p>
+              <p class="menu__weight--kilo">кг</p>  
+            </div>
+          </a>
+          <div class="menu__caption">
+            <p class="menu__caption--text" id="js-chicken__caption">Чего сидишь? Порадуй котэ,</p>
+            <a class="menu__caption--buy" id="js-chicken__buy" href="#">купи.</a>
+          </div>
+        </div>
+      </div>
+             
+    <footer class="footer">&copy; Fedorov Anton</footer>
+    </div>
+
+    
+  </div>
+
+  <script src="dist/js/bundle.js"></script>
+</body>
+
+</html>
