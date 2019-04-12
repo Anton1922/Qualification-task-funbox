@@ -7,20 +7,24 @@ $(document).ready(function(){
 	var $jsDuckWght = $("#js-duck__weight");
 	var $menuCapBuy = $(".menu__caption--buy");
 	var $jsDuckBuy = $("#js-duck__buy");
+	var $jsDuckDes = $("#js-duck__description");
 //CLICK ON IMAGE
 	$jsDuckImg.click(function(){
-		$(this).toggleClass("selected");
-		if ($jsDuckImg.hasClass("selected")){
-			$jsDuckCap.html("Печень утки разварная с артишоками.");
-			$jsDuckBuy.hide();
+		$(this).toggleClass("selected");                                          //ADD CLASS "SELECTED"
+		if ($jsDuckImg.hasClass("selected")){                                     //IF
+			$jsDuckCap.html("Печень утки разварная с артишоками.");                 //CHANGE CAPTION
+			$jsDuckBuy.hide();                                                      //CHANGE CAPTION
+			$jsDuckWght.css("background-color", "#ba1c65");                         //CHANGE WEIGHT COLOR
+			$jsDuckImg.mouseleave(function(){                                       //MOUSELEAVE
+				$jsDuckDes.html("Котэ не одобряет?").css("color", "#e62e7a");         //CHANGE DESCRIPTION TITLE AND HIS COLOR
+			});
 		} else {
-			$jsDuckCap.html("Чего сидишь? Порадуй котэ,");
-			$jsDuckBuy.show();
-		}
-		if ($jsDuckImg.hasClass("selected")){
-			$jsDuckWght.css("background-color", "#ba1c65");
-		} else {
-			$jsDuckWght.css("background-color", "#5897D6");
+			$jsDuckCap.html("Чего сидишь? Порадуй котэ,");                          //CHANGE CAPTION
+			$jsDuckBuy.show();                                                      //CHANGE CAPTION
+			$jsDuckWght.css("background-color", "#5897D6");                         //CHANGE WEIGHT COLOR
+			$jsDuckImg.mouseleave(function(){                                       //MOUSELEAVE
+				$jsDuckDes.html("Сказочное заморское яство").css("color", "#666666"); //CHANGE DESCRIPTION TITLE AND HIS COLOR
+			});
 		}
 	});
 //CLICK ON THE WORD "BUY"
@@ -93,6 +97,16 @@ $(document).ready(function(){
 	var $jsChickWght = $("#js-chicken__weight");
 	var $menuCapBuy = $(".menu__caption--buy");
 	var $jsChickBuy = $("#js-chicken__buy");
+	var $jsChickDes = $("#js-chicken__caption");
+
+//DISABLED
+$jsChickImg.addClass("disabled");
+
+if ($jsChickImg.hasClass("disabled")){
+	$jsChickCap.html("Печалька, с курой закончился.").css("color", "#d2d253");
+	$jsChickBuy.hide();
+}
+/*
 //CLICK ON IMAGE
 	$jsChickImg.click(function(){
 		$(this).toggleClass("selected");
@@ -124,6 +138,6 @@ $(document).ready(function(){
 		} else {
 			$jsChickWght.css("background-color", "#5897D6");
 		}
-	});
+	});*/
 });
 
