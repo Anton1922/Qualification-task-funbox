@@ -21,7 +21,6 @@
 <body>
 
   <div class="wrapper">
-
     <div class="filter">
 
       <header class="header">
@@ -31,9 +30,9 @@
       <div class="menu">
 
         <div class="menu__item" id="duck-media"> <!-- DUCK -->
-          <a class="menu__image duck" id="js-duck__image" href="#">
+          <div class="menu__image duck" id="js-duck__image">
             <div class="menu__description">
-                <p class="menu__description--title-first">Сказочное заморское яство</p>
+                <p class="menu__description--title-first" id="js-duck__description">Сказочное заморское яство</p>
                 <p class="menu__description--title-second">Нямушка</p>
                 <p class="menu__description--taste">с фуа-гра</p>
                 <p class="menu__description--bonus"><span>10 порций</span> <span>мышь в подарок</span></p>
@@ -42,15 +41,15 @@
               <p class="menu__weight--value">0,5</p>
               <p class="menu__weight--kilo">кг</p>  
             </div>
-          </a>
+          </div>
           <div class="menu__caption">
             <p class="menu__caption--text" id="js-duck__caption">Чего сидишь? Порадуй котэ,</p>
-            <a class="menu__caption--buy" id="js-duck__buy" href="#">купи.</a>
+            <p class="menu__caption--buy" id="js-duck__buy">купи.</p>
           </div>
         </div>
 
         <div class="menu__item"> <!-- FISH -->
-          <a class="menu__image fish" id="js-fish__image" href="#">
+          <div class="menu__image fish" id="js-fish__image">
             <div class="menu__description">
               <p class="menu__description--title-first">Сказочное заморское яство</p>
               <p class="menu__description--title-second">Нямушка</p>
@@ -61,37 +60,37 @@
               <p class="menu__weight--value">2</p>
               <p class="menu__weight--kilo">кг</p>  
             </div>
-          </a>
+          </div>
           <div class="menu__caption">
             <p class="menu__caption--text" id="js-fish__caption">Чего сидишь? Порадуй котэ,</p>
-            <a class="menu__caption--buy" id="js-fish__buy" href="#">купи.</a>
+            <p class="menu__caption--buy" id="js-fish__buy">купи.</p>
           </div>
         </div>
 
         <div class="menu__item"> <!-- CHICKEN -->
-          <a class="menu__image chicken" id="js-chicken__image" href="#">
+          <div class="menu__image chicken image--disabled" id="js-chicken__image">
             <div class="menu__description">
-              <p class="menu__description--title-first">Сказочное заморское яство</p>
-              <p class="menu__description--title-second">Нямушка</p>
-              <p class="menu__description--taste">с курой</p>
-              <p class="menu__description--bonus"><span>100 порций</span> <span>5 мышей в подарок</span> <span>заказчик доволен</span></p>
+              <p class="menu__description--title-first text__color--disabled">Сказочное заморское яство</p>
+              <p class="menu__description--title-second text__color--disabled">Нямушка</p>
+              <p class="menu__description--taste text__color--disabled">с курой</p>
+              <p class="menu__description--bonus text__color--disabled"><span>100 порций</span> <span>5 мышей в подарок</span> <span>заказчик доволен</span></p>
             </div>
-            <div class="menu__weight" id="js-chicken__weight">
+            <div class="menu__weight weight--disabled" id="js-chicken__weight">
               <p class="menu__weight--value">5</p>
               <p class="menu__weight--kilo">кг</p>  
             </div>
-          </a>
+          </div>
           <div class="menu__caption">
-            <p class="menu__caption--text" id="js-chicken__caption">Чего сидишь? Порадуй котэ,</p>
-            <a class="menu__caption--buy" id="js-chicken__buy" href="#">купи.</a>
+            <p class="menu__caption--text" id="js-chicken__caption" id="js-chicken__caption">Чего сидишь? Порадуй котэ,</p>
+            <p class="menu__caption--buy" id="js-chicken__buy">купи.</p>
           </div>
         </div>
       </div>
              
-    <footer class="footer">&copy; Fedorov Anton</footer>
+      <footer class="footer">
+        <p class="footer__text">&copy; Fedorov Anton</p>
+      </footer>
     </div>
-
-    
   </div>
 
   <script src="dist/js/bundle.js"></script>
