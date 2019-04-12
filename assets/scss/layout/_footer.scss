@@ -1,12 +1,19 @@
 .footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  margin-top: 10px;
+  /*bottom: 0;
+  left: 0;*/
+  margin: 15px auto 0;
 	width: 100%;
   height: 20px;
   text-align: center;
   font-size: 12px;
   font-family: "Anton", sans-serif;
   color: $gray3;
+
+  &__text {
+    width: 100%;
+  }
+
+  @media screen and (max-width: 599px) and (min-width: 320px) {
+
+  }
 }
