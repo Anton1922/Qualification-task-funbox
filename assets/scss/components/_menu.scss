@@ -2,23 +2,33 @@
 DEFAULT
 *************/
 .menu {
-	position: absolute;
 	display: flex;
 	justify-content: space-evenly;
+	/*position: absolute;
 	top: 15%;
-	left: 0;
+	left: 0;*/
+	margin: 15px auto;
 	width: 100%;
-	height: 70%;
+	height: 80%;
 
-	@media screen and (max-width: 1024px) and (min-width: 768px) {
-		top: 12%;
+	@media screen and (max-width: 1024px) and (min-width: 600px) {
 		flex-wrap: wrap;
+		margin: 10px auto;
+	}
+
+	@media screen and (max-width: 599px) and (min-width: 320px) {
+		flex-direction: column;
 	}
 
 	&__item {
 		display: flex;
 		flex-direction: column;
-		align-items: center;
+		justify-content: center;
+		margin: 5px auto;
+
+		@media screen and (max-width: 1024px) and (min-width: 600px) {
+			width: 45%;
+		}
 	}
 
 	&__image {
@@ -28,15 +38,20 @@ DEFAULT
 		width: 320px;
 		height: 480px;
 		box-sizing: border-box;
-		border: 3px solid $blue-border;
+		background-image: url("../images/default.png");
 		border-radius: 5px;
-		text-decoration: none;
 
-		@media screen and (max-width: 1024px) and (min-width: 768px) {
-			width: 160px;
-			height: 240px;
+		@media screen and (max-width: 1024px) and (min-width: 600px) {
+			width: 224px;
+			height: 336px;
+			background-size: contain;
 		}
 
+		@media screen and (max-width: 599px) and (min-width: 320px) {
+			width: 256px;
+			height: 384px;
+			background-size: contain;
+		}
 	}
 
 	&__caption {
@@ -48,15 +63,11 @@ DEFAULT
 		min-width: 169px;
 		font-size: 13px;
 		color: $white;
-
-		&--text {
-			
-		}
+		text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.004);
 
 		&--buy {
 			margin-left: 5px;
 			text-decoration: none;
-			font-size: 13px;
 			color: $blue-border;
 			border-bottom: 1px dashed $blue-border;
 		}
@@ -70,20 +81,19 @@ DEFAULT
 		width: 70%;
 		height: 35%;
 
-		@media screen and (max-width: 1024px) and (min-width: 768px) {
-
-				width: 95%;
-				text-align: center;
-			}
-
 		&--title-first {
 			font-size: 16px;
 			font-weight: bold;
 			color: $gray3;
 
-			@media screen and (max-width: 1024px) and (min-width: 768px) {
-				font-size: 11px;
+			@media screen and (max-width: 1024px) and (min-width: 600px) {
+				font-size: 12px;
 			}
+
+			@media screen and (max-width: 599px) and (min-width: 320px) {
+				font-size: 13px;
+			}
+
 		}
 
 		&--title-second {
@@ -91,8 +101,12 @@ DEFAULT
 			font-weight: bold;
 			color: $black;
 
-			@media screen and (max-width: 1024px) and (min-width: 768px) {
-				font-size: 24px;
+			@media screen and (max-width: 1024px) and (min-width: 600px) {
+				font-size: 34px;
+			}
+
+			@media screen and (max-width: 599px) and (min-width: 320px) {
+				font-size: 39px;
 			}
 		}
 
@@ -101,8 +115,12 @@ DEFAULT
 			font-weight: bold;
 			color: $black;
 
-			@media screen and (max-width: 1024px) and (min-width: 768px) {
-				font-size: 12px;
+			@media screen and (max-width: 1024px) and (min-width: 600px) {
+				font-size: 17px;
+			}
+
+			@media screen and (max-width: 599px) and (min-width: 320px) {
+				font-size: 20px;
 			}
 		}
 
@@ -114,9 +132,12 @@ DEFAULT
 			font-weight: bold;
 			color: $gray3;
 
-			@media screen and (max-width: 1024px) and (min-width: 768px) {
-				width: 100%;
-				font-size: 11px;
+			@media screen and (max-width: 1024px) and (min-width: 600px) {
+				font-size: 10px;
+			}
+
+			@media screen and (max-width: 599px) and (min-width: 320px) {
+				font-size: 12px;
 			}
 		}
 
@@ -138,11 +159,30 @@ DEFAULT
 		border-radius: 50%;
 		background-color: $blue-border;
 
+		@media screen and (max-width: 1024px) and (min-width: 600px) {
+			width: 57px;
+			height: 57px;
+		}
+
+		@media screen and (max-width: 599px) and (min-width: 320px) {
+			width: 65px;
+			height: 65px;
+		}
+
 		&--value {
 			width: 100%;
 			height: 50%;
 			text-align: center;
 			font-size: 42px;
+
+			@media screen and (max-width: 1024px) and (min-width: 599px) {
+				font-size: 30px;
+			}
+
+			@media screen and (max-width: 599px) and (min-width: 320px) {
+				font-size: 34px;
+			}
+
 		}
 
 		&--kilo {
@@ -150,32 +190,42 @@ DEFAULT
 			height: 30%;
 			text-align: center;
 			font-size: 21px;
+
+			@media screen and (max-width: 1024px) and (min-width: 600px) {
+				font-size: 15px;
+			}
+
+			@media screen and (max-width: 599px) and (min-width: 320px) {
+				font-size: 17px;
+			}
 		}
 	}
 }
 
 #duck-media {
-	@media screen and (max-width: 1024px) and (min-width: 768px) {
-			width: 90%;
+	@media screen and (max-width: 1024px) and (min-width: 600px) {
+		width: 90%;
 		}
 }
-/*************
-BACKGROUNDS
-*************/
-.duck {
-	background-color: $duck;
-}
 
-.fish {
-	background-color: $salmon;
-}
-
-.chicken {
-	background-color: $chicken;
-}
 /*************
 SELECTED
 *************/
 .selected {
-	border-color: $pink-border;
+	background-image: url("../images/selected.png");
+}
+
+/*************
+DISABLED
+*************/
+.image--disabled {
+	background-image: url("../images/disabled.png");
+}
+
+.text__color--disabled {
+	color: $gray-disabled;
+}
+
+.weight--disabled {
+	background-color: $gray-disabled2;
 }
