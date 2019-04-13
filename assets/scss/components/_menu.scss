@@ -40,6 +40,7 @@ DEFAULT
 		box-sizing: border-box;
 		background-image: url("../images/default.png");
 		border-radius: 5px;
+    cursor: pointer;
 
 		@media screen and (max-width: 1024px) and (min-width: 600px) {
 			width: 224px;
@@ -70,6 +71,7 @@ DEFAULT
 			text-decoration: none;
 			color: $blue-border;
 			border-bottom: 1px dashed $blue-border;
+      cursor: pointer;
 		}
 	}
 
