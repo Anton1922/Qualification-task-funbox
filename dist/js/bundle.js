@@ -134,20 +134,28 @@ $(document).ready(function () {
   }); //CLICK ON THE WORD "BUY"
 
   $jsDuckBuy.click(function () {
-    $jsDuckImg.toggleClass("selected");
+    $jsDuckImg.toggleClass("selected"); //ADD CLASS "SELECTED"
 
     if ($jsDuckImg.hasClass("selected")) {
-      $jsDuckCap.html("Печень утки разварная с артишоками.");
-      $jsDuckBuy.hide();
+      //IF
+      $jsDuckCap.html("Печень утки разварная с артишоками."); //CHANGE CAPTION
+
+      $jsDuckBuy.hide(); //CHANGE CAPTION
+
+      $jsDuckWght.css("background-color", "#ba1c65"); //CHANGE WEIGHT COLOR
+
+      $jsDuckImg.mouseleave(function () {
+        //MOUSELEAVE
+        $jsDuckDes.html("Котэ не одобряет?").css("color", "#e62e7a"); //CHANGE DESCRIPTION TITLE AND HIS COLOR
+      });
     } else {
       $jsDuckCap.html("Чего сидишь? Порадуй котэ,");
       $jsDuckBuy.show();
-    }
-
-    if ($jsDuckImg.hasClass("selected")) {
-      $jsDuckWght.css("background-color", "#ba1c65");
-    } else {
       $jsDuckWght.css("background-color", "#5897D6");
+      $jsDuckImg.mouseleave(function () {
+        //MOUSELEAVE
+        $jsDuckDes.html("Сказочное заморское яство").css("color", "#666666"); //CHANGE DESCRIPTION TITLE AND HIS COLOR
+      });
     }
   });
 });
@@ -160,7 +168,8 @@ $(document).ready(function () {
   var $jsFishCap = $("#js-fish__caption");
   var $jsFishWght = $("#js-fish__weight");
   var $menuCapBuy = $(".menu__caption--buy");
-  var $jsFishBuy = $("#js-fish__buy"); //CLICK ON IMAGE
+  var $jsFishBuy = $("#js-fish__buy");
+  var $jsFishDes = $("#js-fish__description"); //CLICK ON IMAGE
 
   $jsFishImg.click(function () {
     $(this).toggleClass("selected");
@@ -168,15 +177,19 @@ $(document).ready(function () {
     if ($jsFishImg.hasClass("selected")) {
       $jsFishCap.html("Головы щучьи с чесноком да свежайшая сёмгушка.");
       $jsFishBuy.hide();
+      $jsFishWght.css("background-color", "#ba1c65");
+      $jsFishImg.mouseleave(function () {
+        //MOUSELEAVE
+        $jsFishDes.html("Котэ не одобряет?").css("color", "#e62e7a"); //CHANGE DESCRIPTION TITLE AND HIS COLOR
+      });
     } else {
       $jsFishCap.html("Чего сидишь? Порадуй котэ,");
       $jsFishBuy.show();
-    }
-
-    if ($jsFishImg.hasClass("selected")) {
-      $jsFishWght.css("background-color", "#ba1c65");
-    } else {
       $jsFishWght.css("background-color", "#5897D6");
+      $jsFishImg.mouseleave(function () {
+        //MOUSELEAVE
+        $jsFishDes.html("Сказочное заморское яство").css("color", "#666666"); //CHANGE DESCRIPTION TITLE AND HIS COLOR
+      });
     }
   }); //CLICK ON THE WORD "BUY"
 
@@ -186,15 +199,19 @@ $(document).ready(function () {
     if ($jsFishImg.hasClass("selected")) {
       $jsFishCap.html("Головы щучьи с чесноком да свежайшая сёмгушка.");
       $jsFishBuy.hide();
+      $jsFishWght.css("background-color", "#ba1c65");
+      $jsFishImg.mouseleave(function () {
+        //MOUSELEAVE
+        $jsFishDes.html("Котэ не одобряет?").css("color", "#e62e7a"); //CHANGE DESCRIPTION TITLE AND HIS COLOR
+      });
     } else {
       $jsFishCap.html("Чего сидишь? Порадуй котэ,");
       $jsFishBuy.show();
-    }
-
-    if ($jsFishImg.hasClass("selected")) {
-      $jsFishWght.css("background-color", "#ba1c65");
-    } else {
       $jsFishWght.css("background-color", "#5897D6");
+      $jsFishImg.mouseleave(function () {
+        //MOUSELEAVE
+        $jsFishDes.html("Сказочное заморское яство").css("color", "#666666"); //CHANGE DESCRIPTION TITLE AND HIS COLOR
+      });
     }
   });
 });
